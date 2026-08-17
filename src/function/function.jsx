@@ -10,7 +10,7 @@ export async function getUsers(page, limit) {
     return [];
   }
 }
-export async function searchUsers(textgit init, page, limit) {
+export async function searchUsers(text, page, limit) {
   try {
     const res = await axios.get(api, { params: { search: text, page, limit } });
     return res.data;
